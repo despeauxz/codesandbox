@@ -1,0 +1,10 @@
+{
+  "name": "codesandbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Godwin Malik <despeauxz@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.18.4"
+  }
+}
