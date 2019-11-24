@@ -1,5 +1,9 @@
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
-export const Button = styled.button`
-    color: red;
+const Button = styled("button")`
+    padding: 10px 20px;
+    background-color: gr;
+    border-radius: 3px;
 `;
+
+export default Button;

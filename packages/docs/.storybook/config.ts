@@ -1,13 +1,21 @@
-import { configure, addDecorator } from "@storybook/react";
+import { configure, addDecorator, addParameters } from "@storybook/react";
+import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
+import { withInfo } from "@storybook/addon-info";
+import { withThemesProvider } from 'storybook-addon-emotion-theme';
 import theme from "../src/theme";
-import { withThemesProvider } from "storybook-addon-styled-component-theme";
-// automatically import all files ending in *.stories.js
-const req = require.context("../src", true, /.story.tsx$/);
+
+addDecorator(withInfo);
+addDecorator(withThemesProvider([theme]));
+addParameters({
+    viewport: {
+        viewports: INITIAL_VIEWPORTS,
+    },
+});
+
+const req = require.context("../src/components", true, /.story.tsx$/);
 
 function loadStories() {
-  req.keys().forEach(req);
+    req.keys().forEach(req);
 }
-
-addDecorator(withThemesProvider([theme]));
 
 configure(loadStories, module);
