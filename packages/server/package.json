@@ -29,7 +29,7 @@
     },
     "dependencies": {
         "apollo-server-core": "^2.4.6",
-        "apollo-server-express": "2.3.2",
+        "apollo-server-express": "2.14.2",
         "connect-redis": "3.4.0",
         "cors": "2.8.5",
         "dataloader": "1.4.0",
