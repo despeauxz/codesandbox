@@ -28,7 +28,7 @@
         "typescript": "3.3.3333"
     },
     "dependencies": {
-        "apollo-server-core": "^2.4.6",
+        "apollo-server-core": "^2.14.2",
         "apollo-server-express": "2.3.2",
         "connect-redis": "3.4.0",
         "cors": "2.8.5",
