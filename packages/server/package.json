@@ -48,7 +48,7 @@
         "remark-parse": "^6.0.3",
         "remark-ping": "^2.1.6",
         "remark-rehype": "^4.0.0",
-        "type-graphql": "^0.17.5",
+        "type-graphql": "^0.17.6",
         "typedi": "^0.8.0",
         "typeorm": "0.2.12",
         "typeorm-typedi-extensions": "^0.2.3",
